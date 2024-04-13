@@ -1,0 +1,13 @@
+@import "../../node_modules/vanilla-infinite-marquee/infinite-marquee.css";
+
+@font-face {
+  font-family: "Druk Cyr";
+  src: url(../fonts/DrukCyr-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Druk Cyr";
+  src: url(../fonts/DrukCyr-Bold.ttf);
+  font-weight: 900;
+}
