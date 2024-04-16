@@ -36,7 +36,7 @@
           ><source
             srcset="
               ./src/images/header-author-mobile-1x.png 1x,
-              ./src/images/header-author-mobile-1x.png 2x
+              ./src/images/header-author-mobile-2x.png 2x
             "
             media="(min-width: 320px)" />
           <img
@@ -172,7 +172,7 @@
             ><source
               srcset="
                 ./src/images/about-author-image-mobile-1x.png 1x,
-                ./src/images/about-author-image-mobile-1x.png 2x
+                ./src/images/about-author-image-mobile-2x.png 2x
               "
               width="298"
               height="298"
@@ -731,10 +731,65 @@
           </div>
         </div>
       </section>
+      <section class="section-video">
+        <div class="container">
+          <h2 class="video-title">вот что говорят люди,</h2>
+          <p class="video-subtitle">после работы со мной</p>
+          <div class="video-container">
+            <div class="siema">
+              <div class="video-wrapper">
+                <iframe
+                  class="iframe"
+                  src="https://embed.wave.video/LyUPINCqvKbxPwyA"
+                  frameborder="0"
+                  allow="fullscreen"
+                  scrolling="no"
+                ></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe
+                  class="iframe"
+                  src="https://embed.wave.video/LyUPINCqvKbxPwyA"
+                  frameborder="0"
+                  allow="fullscreen"
+                  scrolling="no"
+                ></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe
+                  class="iframe"
+                  src="https://embed.wave.video/LyUPINCqvKbxPwyA"
+                  frameborder="0"
+                  allow="fullscreen"
+                  scrolling="no"
+                ></iframe>
+              </div>
+            </div>
+            <div class="siema-button-control">
+              <button class="prev">
+                <img
+                  src="./src/images/siema-button-left.svg"
+                  alt="left"
+                  width="36"
+                  height="36"
+                />
+              </button>
+              <button class="next">
+                <img
+                  src="./src/images/siema-button-right.svg"
+                  alt="right"
+                  width="36"
+                  height="36"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="you-get">
         <div class="background">
           <div class="you-get-marquee marquee-container">
-            <p class="marquee-text">Я работаю далеко не со всеми</p>
+            <p class="marquee-text">Я работаю далеко не со всеми!</p>
           </div>
           <div class="container">
             <div class="wrapper">
@@ -871,6 +926,16 @@
             <p class="mail-link">@gmail.com</p>
           </div>
         </div>
+        <div class="insta-container">
+          <a
+            class="insta-footer link"
+            href="https://www.instagram.com/yuliiastory"
+            target="_blank"
+            rel="nofollow"
+            ><img src="./src/images/insta-icon.svg" alt="insta" />
+            <p class="mail-link">@yuliiastory</p></a
+          >
+        </div>
         <a
           class="disign-creator-link link"
           href="https://www.instagram.com/lllcku"
@@ -891,5 +956,6 @@
       </div>
     </footer>
     <script src="./src/js/marquee.js" type="module"></script>
+    <script src="./src/js/siema.js" type="module"></script>
   </body>
 </html>

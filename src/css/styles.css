@@ -247,6 +247,17 @@ p {
   height: 4px;
 
   background: #1fa643;
+
+  animation: underline-appear 2s ease forwards;
+}
+
+@keyframes underline-appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* steps-plan */
@@ -288,9 +299,6 @@ p {
 }
 
 /* long-throught */
-
-.long-throught {
-}
 
 .long-throught .container {
   max-width: 428px;
@@ -555,9 +563,6 @@ p {
 
 /* about-author */
 
-.about-author {
-}
-
 .about-author .container {
   max-width: 428px;
   margin-left: auto;
@@ -646,9 +651,6 @@ p {
 .in-italy {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.container {
 }
 
 .in-italy-list {
@@ -902,7 +904,7 @@ p {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 90%; /* 11.7px */
+  line-height: 100%; /* 11.7px */
   letter-spacing: -0.26px;
 
   max-width: 170px;
@@ -1000,9 +1002,6 @@ p {
 }
 
 /* after meeting */
-
-.after-meeting {
-}
 
 .after-meeting-title {
   color: #1fa643;
@@ -1133,10 +1132,10 @@ p {
 .together-we-list .item-number {
   display: block;
   color: #ebf5e8;
-  font-family: "Futura PT";
+  font-family: Manrope;
   font-size: 80px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 100%; /* 80px */
 }
 
@@ -1152,9 +1151,6 @@ p {
 }
 
 /* gift-contianer */
-
-.gift-container {
-}
 
 .gift-list {
   display: flex;
@@ -1206,9 +1202,6 @@ p {
 }
 
 /* after-consultation */
-
-.after-consultation {
-}
 
 .after-consultation .background {
   padding-top: 60px;
@@ -1533,7 +1526,7 @@ p {
 }
 
 .your-offer-wrapper {
-  padding: 50px 17px;
+  padding: 50px 17px 30px 17px;
 
   max-width: 320px;
   width: 100%;
@@ -1648,6 +1641,23 @@ p {
   margin-right: auto;
 
   margin-bottom: 10px;
+
+  animation: glowing-button 1300ms infinite;
+}
+
+@keyframes glowing-button {
+  0% {
+    background-color: #d7221e;
+    box-shadow: 0 0 5px #d7221e;
+  }
+  50% {
+    background-color: #ae0400;
+    box-shadow: 0 0 20px #ae0400;
+  }
+  100% {
+    background-color: #d7221e;
+    box-shadow: 0 0 5px #d7221e;
+  }
 }
 
 .answers-under-button {
@@ -1700,6 +1710,79 @@ p {
   line-height: 110%; /* 15.4px */
 
   max-width: 287px;
+}
+
+/* section video */
+
+.section-video .container {
+  position: relative;
+}
+
+.section-video {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.video-title {
+  color: #1fa643;
+  text-align: center;
+  font-family: "Druk Cyr";
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.video-subtitle {
+  color: #1a1a1a;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 22px */
+
+  margin-bottom: 30px;
+}
+
+/* siema */
+
+.video-wrapper {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iframe {
+  border-radius: 20px;
+
+  height: 391px;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prev {
+  position: absolute;
+  top: 260px;
+  left: 1%;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  top: 260px;
+  right: 1%;
+
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* you get */
@@ -1883,10 +1966,10 @@ p {
 .you-get-list .item-number {
   display: block;
   color: #d1e7ca;
-  font-family: "Futura PT";
+  font-family: Manrope;
   font-size: 80px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 100%; /* 80px */
 }
 
@@ -1940,17 +2023,18 @@ p {
   display: block;
   color: #fff;
   text-align: center;
-  font-family: Manrope;
-  font-size: 14px;
+  font-family: "Futura PT";
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration-line: none;
 }
 
 /* mail */
 
 .footer-social-container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .mail-container {
@@ -1973,18 +2057,25 @@ p {
 
 /* fop */
 
-.fop-container {
-  margin-bottom: 20px;
+.insta-container {
+  margin-bottom: 30px;
 }
 
-.fop-name {
+.insta-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mail-link {
   color: #fff;
-  text-align: center;
   font-family: "Futura PT";
   font-size: 14px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
   line-height: normal;
+  text-decoration-line: none;
 }
 
 /* disign creator */
