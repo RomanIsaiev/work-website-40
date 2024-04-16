@@ -15,6 +15,7 @@
     "jquery": "^3.7.1",
     "modern-normalize": "^2.0.0",
     "siema": "^1.5.1",
-    "vanilla-infinite-marquee": "^1.0.9"
+    "vanilla-infinite-marquee": "^1.0.9",
+    "aos": "^2.3.4"
   }
 }
