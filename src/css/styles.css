@@ -1469,6 +1469,8 @@ p {
 }
 
 .section-price .container {
+  position: relative;
+
   max-width: 300px;
   width: 100%;
   margin-left: auto;
@@ -1505,6 +1507,19 @@ p {
   text-transform: uppercase;
 }
 
+.line-through {
+  position: absolute;
+  top: 110px;
+  left: 4%;
+
+  transform: rotate(-9deg);
+
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: #d7221e;
+}
+
 .price {
   color: #fff;
   text-align: right;
@@ -1535,6 +1550,8 @@ p {
 
   border-radius: 0px 0px 15px 15px;
   background: #ebf5e8;
+
+  margin-bottom: 40px;
 }
 
 .your-offer-title {
@@ -1580,6 +1597,68 @@ p {
 .your-offer-list .list-item span {
   color: #d7221e;
   font-weight: 600;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 32px;
+}
+
+.countdown-time {
+  display: block;
+
+  color: #1fa643;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.56px;
+
+  width: 70px;
+}
+
+.countdown-doubledot {
+  content: "";
+  display: flex;
+
+  height: 25px;
+  width: 1px;
+  background: #1fa643;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.timer-text {
+  color: #1a1a1a;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+
+  max-width: 189px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 10px;
 }
 
 /* answers-button */
