@@ -2104,7 +2104,7 @@ p {
   color: #fff;
   text-align: center;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2125,20 +2125,10 @@ p {
   gap: 10px;
 }
 
-.mail-link {
-  color: #fff;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: none;
-}
-
 /* fop */
 
 .insta-container {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .insta-footer {
@@ -2151,7 +2141,7 @@ p {
 .mail-link {
   color: #fff;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2170,10 +2160,6 @@ p {
   align-items: center;
   justify-content: center;
   gap: 5px;
-
-  padding: 7px;
-  border-radius: 40px;
-  border: 0.3px solid #ffffff88;
 
   max-width: 189px;
   width: 100%;
